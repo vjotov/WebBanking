@@ -25,6 +25,7 @@ public class UserController {
 	public String getUsers(Model model){
 		model.addAttribute("users", userService.getUsers());
 		model.addAttribute("addUserUrl", UrlConstants.ADD_USER_URL);
+		model.addAttribute("accountUrl", UrlConstants.ACCOUNT_URL);
 		
 		return "userRegister";
 	}

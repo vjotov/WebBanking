@@ -22,4 +22,13 @@ public class UserServiceImpl implements UserService {
 		return users;
 	}
 
+	@Override
+	public User getUser(long id) {
+		for(User u : users) {
+			if(u.getId() == id)
+				return u;
+		}
+		return null;
+	}
+
 }

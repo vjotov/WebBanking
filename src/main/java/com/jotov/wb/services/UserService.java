@@ -8,4 +8,6 @@ public interface UserService {
 	boolean addUser(User user);
 
 	List<User> getUsers();
+	
+	User getUser(long id);
 }
