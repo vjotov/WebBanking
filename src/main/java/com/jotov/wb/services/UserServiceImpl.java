@@ -5,10 +5,10 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 import com.jotov.wb.entities.User;
 
-@Service
+@Service("UserServiceImpl")
 public class UserServiceImpl implements UserService {
 
-	private static List<User> users = new ArrayList<>(); 
+	private static List<User> users = new ArrayList<User>(); 
 	
 	@Override
 	public boolean addUser(User user) {

@@ -5,7 +5,7 @@ import com.jotov.wb.entities.User;
 
 
 public interface UserService {
-	boolean addUser(User student);
+	boolean addUser(User user);
 
 	List<User> getUsers();
 }
